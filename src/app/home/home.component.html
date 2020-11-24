@@ -1,0 +1,9 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">You're now logged in!</h4>
+    <div class="card-body">
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <div *ngIf="users">
+            <h4 *ngFor="let user of users">Welcome {{user.firstName}} {{user.lastName}}</h4>
+        </div>
+    </div>
+</div>
